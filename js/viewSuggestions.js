@@ -33,7 +33,7 @@ function viewSuggestions(visiblility) {
         }
     } else {
         for(var n = 0;n < privateSuggestions.length;n++) {
-            text += (n + 1) + ". " + privateSuggestions[n].title + " - " + privateSuggestions[n].text + "<br>";
+            text += (n + 1) + ". " + privateSuggestions[n].title + " - " + privateSuggestions[n].text + privateSuggestions[n].respone + "<br>";
         }
     }
     displayArea.innerHTML = text;
@@ -71,3 +71,4 @@ function deleteSuggestions() {
     upload(privateSuggestions.concat(publicSuggestions)); // Uploads the updated suggestions array to local storage
 
 }
+
