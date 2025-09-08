@@ -27,7 +27,7 @@ isuggestions = localStorage.getItem('suggestions'); //load suggestions from loca
 isuggestions = JSON.parse(isuggestions); //parse the plan into a usable format for javascript
 for (n=0;n<isuggestions.length;n++) //prints private sugestions individually by looping until it has looked at all suggestions
 {
-    if (!isuggestions[n].Public) //prints everything if suggestion is private
+    if (!isuggestions[n].public) //prints everything if suggestion is private
     { 
         num++;
         document.write("<BR><h1>"); //mostly just layout stuff
@@ -63,5 +63,6 @@ alert("Saved.");
 main();</SCRIPT>
 </BODY>
 </HTML>
+
 
 
