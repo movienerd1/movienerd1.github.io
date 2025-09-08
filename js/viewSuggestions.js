@@ -7,10 +7,10 @@ window.addEventListener('load', () => {
     displayArea = document.getElementById("displayArea");
     deleteButton = document.getElementById("deleteButton");
     if (usersData[loggedUser].Mod == true) {
-        deleteButton.style.visibility = 'hidden';
+        deleteButton.style.visibility = 'visible';
         console.log('p')
     } else {
-        deleteButton.style.visibility = 'visible';
+        deleteButton.style.visibility = 'hidden';
     }
     sortSuggestions();
     viewSuggestions("public");
@@ -79,6 +79,7 @@ function deleteSuggestions() {
     upload(privateSuggestions.concat(publicSuggestions)); // Uploads the updated suggestions array to local storage
 
 }
+
 
 
 
