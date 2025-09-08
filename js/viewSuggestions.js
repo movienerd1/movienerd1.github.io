@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
     deleteButton = document.getElementById("deleteButton");
     if (usersData[loggedUser].mod == true) {
         deleteButton.style.visibility = 'hidden';
+        console.log('p')
     } else {
         deleteButton.style.visibility = 'visible';
     }
@@ -20,7 +21,6 @@ function sortSuggestions() {
     for(var n = 0;n < suggestions.length;n++) {
         if (suggestions[n].public == true) {
             publicSuggestions.push(suggestions[n])
-            console.log('p')
         } else {
             privateSuggestions.push(suggestions[n])
         }
@@ -79,6 +79,7 @@ function deleteSuggestions() {
     upload(privateSuggestions.concat(publicSuggestions)); // Uploads the updated suggestions array to local storage
 
 }
+
 
 
 
