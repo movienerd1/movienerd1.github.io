@@ -47,8 +47,9 @@ var suggestions = [
     new Suggestion("More Extracurriculars", "Can we have more extracurricular activities?", true, "More extracurricular activities will be added.")
 ]
 
-
-suggestions = download();
+if (download() != null) {
+    suggestions = download(); // If there are suggestions in local storage, get them.
+}
 
 
 // Functions
@@ -64,3 +65,5 @@ function download() {
     const suggestions = JSON.parse(localStorage.getItem("suggestions")); // Downloads the suggestions array from local storage
     return suggestions; // Returns the suggestions array
 }
+
+console.log("a")
