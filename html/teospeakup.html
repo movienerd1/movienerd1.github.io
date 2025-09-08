@@ -2,7 +2,13 @@
 <HEAD>
 <TITLE> Speak Up </TITLE>
 <script src="../js/app.js" lang="JavaScript"></script>
-<SCRIPT LANGUAGE="JavaScript">
+</HEAD>
+<BODY>
+<BODY BGCOLOR="D0f9f0">
+<H2 style="font-family:arial black;"> Speak Up </H2>
+<HR>
+<button onclick="redirectTo('dashboard.html')">Back to Dashboard</button>
+<SCRIPT LANGUAGE="JavaScript"> 
 var suggestions;
 isuggestions = new Array();
 function main()
@@ -53,15 +59,9 @@ function save() //save suggestions to local storage
 localStorage.clear(); //clears storage to ensure there are no double ups of saves
 localStorage.setItem("suggestions", JSON.stringify(isuggestions)); //puts new suggestions into storage
 alert("Saved.");
-}
-</SCRIPT>
-</HEAD>
-<BODY>
-<BODY BGCOLOR="D0f9f0">
-<H2 style="font-family:arial black;"> Speak Up </H2>
-<HR>
-<button onclick="redirectTo('dashboard.html')">Back to Dashboard</button>
-<SCRIPT LANGUAGE="JavaScript"> main();</SCRIPT>
+}    
+main();</SCRIPT>
 </BODY>
 </HTML>
+
 
