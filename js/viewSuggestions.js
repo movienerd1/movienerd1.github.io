@@ -29,11 +29,11 @@ function viewSuggestions(visiblility) {
     }
     if(public == true) {
         for(var n = 0;n < publicSuggestions.length;n++) {
-            text += (n + 1) + ". " + publicSuggestions[n].title + " - " + publicSuggestions[n].text + " - " + publicSuggestions[n].respone + "<br>";
+            text += (n + 1) + ". " + publicSuggestions[n].title + " - " + publicSuggestions[n].text + " - " + publicSuggestions[n].response + "<br>";
         }
     } else {
         for(var n = 0;n < privateSuggestions.length;n++) {
-            text += (n + 1) + ". " + privateSuggestions[n].title + " - " + privateSuggestions[n].text + privateSuggestions[n].respone + "<br>";
+            text += (n + 1) + ". " + privateSuggestions[n].title + " - " + privateSuggestions[n].text + privateSuggestions[n].response + "<br>";
         }
     }
     displayArea.innerHTML = text;
@@ -71,4 +71,5 @@ function deleteSuggestions() {
     upload(privateSuggestions.concat(publicSuggestions)); // Uploads the updated suggestions array to local storage
 
 }
+
 
