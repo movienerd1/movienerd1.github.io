@@ -29,7 +29,7 @@ function viewSuggestions(visiblility) {
     }
     if(public == true) {
         for(var n = 0;n < publicSuggestions.length;n++) {
-            text += (n + 1) + ". " + publicSuggestions[n].title + " - " + publicSuggestions[n].text + "<br>";
+            text += (n + 1) + ". " + publicSuggestions[n].title + " - " + publicSuggestions[n].text + " - " + publicSuggestions[n].respone + "<br>";
         }
     } else {
         for(var n = 0;n < privateSuggestions.length;n++) {
@@ -69,4 +69,5 @@ function deleteSuggestions() {
     }
     viewSuggestions(choice);
     upload(privateSuggestions.concat(publicSuggestions)); // Uploads the updated suggestions array to local storage
+
 }
