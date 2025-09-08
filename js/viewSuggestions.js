@@ -6,7 +6,7 @@ var deleteButton;
 window.addEventListener('load', () => {
     displayArea = document.getElementById("displayArea");
     deleteButton = document.getElementById("deleteButton");
-    if (usersData[loggedUser].mod == true) {
+    if (usersData[loggedUser].Mod == true) {
         deleteButton.style.visibility = 'hidden';
         console.log('p')
     } else {
@@ -79,6 +79,7 @@ function deleteSuggestions() {
     upload(privateSuggestions.concat(publicSuggestions)); // Uploads the updated suggestions array to local storage
 
 }
+
 
 
 
