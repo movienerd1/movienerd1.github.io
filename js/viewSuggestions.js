@@ -4,6 +4,7 @@ var displayArea;
 
 window.addEventListener('load', () => {
     displayArea = document.getElementById("displayArea");
+    displayArea = document.getElementById("displayArea");
     sortSuggestions();
     viewSuggestions("public");
 });
@@ -71,5 +72,6 @@ function deleteSuggestions() {
     upload(privateSuggestions.concat(publicSuggestions)); // Uploads the updated suggestions array to local storage
 
 }
+
 
 
