@@ -51,6 +51,7 @@ if (download() != null) {
     suggestions = download(); // If there are suggestions in local storage, get them.
 }
 
+upload()
 
 // Functions
 function redirectTo(location) { // Function to redirect to a specific location.
@@ -65,5 +66,6 @@ function download() {
     const suggestions = JSON.parse(localStorage.getItem("suggestions")); // Downloads the suggestions array from local storage
     return suggestions; // Returns the suggestions array
 }
+
 
 console.log("a")
