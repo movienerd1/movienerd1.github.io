@@ -51,7 +51,7 @@ if (download() != null) {
     suggestions = download(); // If there are suggestions in local storage, get them.
 }
 
-upload(suggestions)
+
 
 // Functions
 function redirectTo(location) { // Function to redirect to a specific location.
@@ -69,4 +69,6 @@ function download() {
 
 
 console.log("a")
+
+upload(suggestions)
 
