@@ -20,6 +20,7 @@ function sortSuggestions() {
     for(var n = 0;n < suggestions.length;n++) {
         if (suggestions[n].public == true) {
             publicSuggestions.push(suggestions[n])
+            console.log('p')
         } else {
             privateSuggestions.push(suggestions[n])
         }
@@ -78,6 +79,7 @@ function deleteSuggestions() {
     upload(privateSuggestions.concat(publicSuggestions)); // Uploads the updated suggestions array to local storage
 
 }
+
 
 
 
